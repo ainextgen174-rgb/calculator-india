@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CALCULATOR INDIA — premium mobile-friendly calculator with Scientific mode, history, settings, memory, and theme switcher."
+    />
+    <title>CALCULATOR INDIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Calculator India logo and name">
+          <img src="assets/logo.svg" alt="CALCULATOR INDIA Logo" class="brand-logo" />
+          <div class="brand-text">
+            <span>CALCULATOR INDIA</span>
+            <small>Premium Calculator</small>
+          </div>
+        </div>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      </header>
+
+      <nav class="tabs" aria-label="Calculator sections">
+        <button class="tab active" data-target="basic">Basic</button>
+        <button class="tab" data-target="scientific">Scientific</button>
+        <button class="tab" data-target="history">History</button>
+        <button class="tab" data-target="settings">Settings</button>
+      </nav>
+
+      <main class="tab-panels">
+        <section id="basic" class="panel active">
+          <div class="screen" aria-live="polite">
+            <div id="expressionDisplay" class="expression">0</div>
+            <div id="resultDisplay" class="result">0</div>
+          </div>
+
+          <div class="memory-row">
+            <button class="mem-btn" data-action="memory-clear">MC</button>
+            <button class="mem-btn" data-action="memory-recall">MR</button>
+            <button class="mem-btn" data-action="memory-add">M+</button>
+            <button class="mem-btn" data-action="memory-subtract">M-</button>
+            <button class="mem-btn" data-action="memory-store">MS</button>
+            <div id="memoryValue" class="memory-value">M: 0</div>
+          </div>
+
+          <div class="keypad basic-grid">
+            <button class="action-btn" data-action="clear">AC</button>
+            <button class="action-btn" data-action="delete">⌫</button>
+            <button class="action-btn" data-action="toggle-sign">±</button>
+            <button class="operator-btn" data-value="÷">÷</button>
+
+            <button class="num-btn" data-value="7">7</button>
+            <button class="num-btn" data-value="8">8</button>
+            <button class="num-btn" data-value="9">9</button>
+            <button class="operator-btn" data-value="×">×</button>
+
+            <button class="num-btn" data-value="4">4</button>
+            <button class="num-btn" data-value="5">5</button>
+            <button class="num-btn" data-value="6">6</button>
+            <button class="operator-btn" data-value="-">−</button>
+
+            <button class="num-btn" data-value="1">1</button>
+            <button class="num-btn" data-value="2">2</button>
+            <button class="num-btn" data-value="3">3</button>
+            <button class="operator-btn" data-value="+">+</button>
+
+            <button class="action-btn" data-action="percentage">%</button>
+            <button class="num-btn" data-value="0">0</button>
+            <button class="num-btn" data-value=".">.</button>
+            <button class="equals-btn" data-action="equals">=</button>
+          </div>
+        </section>
+
+        <section id="scientific" class="panel">
+          <div class="screen" aria-live="polite">
+            <div id="scienceExpression" class="expression">0</div>
+            <div id="scienceResult" class="result">0</div>
+          </div>
+
+          <div class="keypad scientific-grid">
+            <button class="science-btn" data-action="function" data-value="sin">sin</button>
+            <button class="science-btn" data-action="function" data-value="cos">cos</button>
+            <button class="science-btn" data-action="function" data-value="tan">tan</button>
+            <button class="science-btn" data-action="function" data-value="log">log</button>
+
+            <button class="science-btn" data-action="function" data-value="ln">ln</button>
+            <button class="science-btn" data-action="function" data-value="sqrt">√</button>
+            <button class="science-btn" data-action="function" data-value="square">x²</button>
+            <button class="science-btn" data-action="function" data-value="inverse">1/x</button>
+
+            <button class="science-btn" data-action="function" data-value="pi">π</button>
+            <button class="science-btn" data-action="function" data-value="e">e</button>
+            <button class="science-btn" data-action="function" data-value="exp">10ˣ</button>
+            <button class="science-btn" data-action="function" data-value="power">xʸ</button>
+
+            <button class="action-btn" data-action="clear">AC</button>
+            <button class="action-btn" data-action="delete">⌫</button>
+            <button class="action-btn" data-action="toggle-sign">±</button>
+            <button class="operator-btn" data-value="÷">÷</button>
+
+            <button class="num-btn" data-value="7">7</button>
+            <button class="num-btn" data-value="8">8</button>
+            <button class="num-btn" data-value="9">9</button>
+            <button class="operator-btn" data-value="×">×</button>
+
+            <button class="num-btn" data-value="4">4</button>
+            <button class="num-btn" data-value="5">5</button>
+            <button class="num-btn" data-value="6">6</button>
+            <button class="operator-btn" data-value="-">−</button>
+
+            <button class="num-btn" data-value="1">1</button>
+            <button class="num-btn" data-value="2">2</button>
+            <button class="num-btn" data-value="3">3</button>
+            <button class="operator-btn" data-value="+">+</button>
+
+            <button class="action-btn" data-action="percentage">%</button>
+            <button class="num-btn" data-value="0">0</button>
+            <button class="num-btn" data-value=".">.</button>
+            <button class="equals-btn" data-action="equals">=</button>
+          </div>
+        </section>
+
+        <section id="history" class="panel">
+          <div class="panel-header">
+            <h2>Calculation History</h2>
+            <button id="clearHistoryBtn" class="secondary-btn">Clear</button>
+          </div>
+          <div id="historyList" class="history-list" aria-live="polite"></div>
+        </section>
+
+        <section id="settings" class="panel">
+          <div class="settings-card">
+            <h2>Settings</h2>
+
+            <div class="setting-item">
+              <label for="themeSelect">App theme</label>
+              <select id="themeSelect">
+                <option value="dark">Dark mode</option>
+                <option value="light">Light mode</option>
+              </select>
+            </div>
+
+            <div class="setting-item checkbox-row">
+              <label for="groupingToggle">Use Indian number formatting</label>
+              <input id="groupingToggle" type="checkbox" checked />
+            </div>
+
+            <div class="setting-item checkbox-row">
+              <label for="soundToggle">Button sound</label>
+              <input id="soundToggle" type="checkbox" />
+            </div>
+
+            <div class="setting-item">
+              <label for="historyLimit">History limit</label>
+              <input id="historyLimit" type="range" min="5" max="100" step="5" value="20" />
+              <small id="historyLimitLabel">20 entries</small>
+            </div>
+
+            <div class="settings-actions">
+              <button id="copyCurrentBtn" class="secondary-btn">Copy Result</button>
+              <button id="pasteBtn" class="secondary-btn">Paste</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
