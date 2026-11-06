@@ -1,43 +1,18 @@
-# CALCULATOR INDIA
-
-CALCULATOR INDIA is a premium calculator web app designed with a modern Indian-inspired aesthetic and mobile-first responsiveness. It is fully functional, fast, and can be hosted for free on GitHub Pages.
-
-## Features
-- Basic calculator functions
-- Scientific calculator tools
-- Calculation history with local storage
-- Memory functions (M+, M-, MR, MS, MC)
-- Copy and paste support
-- Percentage and square root
-- Dark mode and light mode
-- Customizable settings
-- Responsive mobile layout
-
-## Run locally
-Open `index.html` in a browser, or serve the repository with a simple local server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## GitHub Pages
-1. Push this repository to GitHub.
-2. Open the repository on GitHub.
-3. Go to Settings → Pages.
-4. Choose the default branch (`main`) and `/ (root)` folder.
-5. Save the settings.
-
-Your app will be available at:
-
-`https://<your-username>.github.io/calculator-india/`
-
-## Project structure
-- `index.html` – App layout
-- `styles.css` – Premium UI styling
-- `app.js` – Logic for calculator functions and storage
-- `assets/logo.svg` – App logo
-
-## License
-MIT
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">CALCULATOR INDIA</title>
+  <desc id="desc">A premium calculator icon in saffron, ivory and green, inspired by the Indian tricolour.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#202c42"/><stop offset="1" stop-color="#101624"/></linearGradient>
+    <linearGradient id="saffron" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb36b"/><stop offset="1" stop-color="#f07845"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="58" fill="url(#base)"/>
+  <path d="M37 74a37 37 0 0 1 37-37h108a37 37 0 0 1 37 37v11H37z" fill="url(#saffron)"/>
+  <rect x="37" y="85" width="182" height="12" fill="#f5f2e9"/>
+  <path d="M37 97h182v11a37 37 0 0 1-37 37H74a37 37 0 0 1-37-37z" fill="#16834b"/>
+  <rect x="54" y="125" width="148" height="78" rx="16" fill="#0a1220" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+  <g fill="#f6f4ed"><rect x="68" y="139" width="34" height="25" rx="7"/><rect x="111" y="139" width="34" height="25" rx="7"/><rect x="154" y="139" width="34" height="25" rx="7"/></g>
+  <g fill="#ff9b57"><rect x="68" y="172" width="34" height="18" rx="7"/><rect x="111" y="172" width="34" height="18" rx="7"/></g>
+  <rect x="154" y="172" width="34" height="18" rx="7" fill="#16834b"/>
+  <circle cx="128" cy="91" r="9" fill="none" stroke="#263b73" stroke-width="2"/>
+  <path d="M128 83v16m-8-8h16m-13-6 10 12m0-12-10 12" stroke="#263b73" stroke-width="1.1"/>
+</svg>
